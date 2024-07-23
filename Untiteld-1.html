@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9f44dc535b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="player">
+        <div class="cover-container">
+            <img id="cover" class="cover" src="th.jpeg" alt="Cover">
+        </div>
+        <div class="info">
+            <h3 id="title">Husn Tera Taub Tauba</h3>
+            <h4 id="artist">Karan Aujla</h4>
+        </div>
+        <div class="controls">
+            <button id="prev"><i class="fa-solid fa-backward"></i></button>
+            <button id="play"><i class="fa-solid fa-play"></i></button>
+            <button id="next"><i class="fa-solid fa-forward"></i></button>
+            <button id="shuffle"><i class="fa-solid fa-shuffle"></i></button>
+        </div>
+        <div class="progress-container">
+            <div id="progress" class="progress"></div>
+        </div>
+        <div class="volume-container">
+            <i class="fas fa-volume-down"></i>
+            <input id="volume" type="range" min="0" max="1" step="0.01" value="1">
+            <i class="fas fa-volume-up"></i>
+        </div>
+        <button id="toggle-playlist">Playlist</button>
+        <ul id="playlist" class="playlist"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
